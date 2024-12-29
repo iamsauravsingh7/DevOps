@@ -34,7 +34,7 @@ sudo apt update
 sudo apt install containerd.io -y
 sudo mkdir -p /etc/containerd
 sudo su
-containerd config default>/etc/containerd/config.toml
+containerd config default>/etc/containerd/config.toml # this command will create default config.toml
 exit
 sudo systemctl restart containerd
 sudo systemctl enable containerd
